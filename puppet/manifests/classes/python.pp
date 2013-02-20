@@ -22,7 +22,7 @@ class python {
 #                command => "$HOME_DIR/unix/bin/pip install -r $PROJ_DIR/puppet/requirements/compiled.txt",
 #                require => Exec['virtualenv-create']
 #            }
-            package { ['nose', 'tornado', 'ipython', 'sympy']:
+            package { ['nose', 'tornado', 'ipython', 'sympy', 'scikit-learn']:
                 ensure => installed,
                 provider => pip,
                 require => Package['virtualenv']
